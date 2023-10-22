@@ -13,6 +13,7 @@ module GCStats
       def log_process_action(payload)
         messages = super
         messages << "PID: #{Process.pid}"
+        messages << "Controller: #{payload[:controller]}##{payload[:action]}"
 
         gc_time = GC::Profiler.total_time
         if gc_time > 0
