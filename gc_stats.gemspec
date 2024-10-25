@@ -18,5 +18,5 @@ Gem::Specification.new do |gem|
 
   gem.files = Dir['lib/**/*.rb', 'CHANGELOG.md', 'CONTRIBUTORS.md', 'LICENSE.txt', 'NOTICE.txt', 'README.md']
 
-  gem.add_dependency 'rails', '~> 4.1'
+  gem.add_dependency 'rails', '>= 4.1'
 end
